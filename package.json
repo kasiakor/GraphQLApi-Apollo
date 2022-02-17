@@ -1,0 +1,23 @@
+{
+  "name": "graphqlapi-apollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasiakor/GraphQLApi-Apollo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasiakor/GraphQLApi-Apollo/issues"
+  },
+  "homepage": "https://github.com/kasiakor/GraphQLApi-Apollo#readme",
+  "dependencies": {
+    "apollo-server": "^2.12.0",
+    "nodemon": "^2.0.15"
+  }
+}
