@@ -1,5 +1,8 @@
 const {ApolloServer, gql}= require('apollo-server');
 
+//pull dummy data from json file
+const sessions = require('./data/sessions.json');
+
 //SCHEMA
 //define object that will hold the schema for API
 //define what queries are allowe by the API
@@ -21,7 +24,17 @@ type Session {
     level:String
 }`
 
-const server = new ApolloServer({typeDefs});
+
+//create resolver map object that hold - type:field:resolver
+const resolvers = {
+    Query: {
+        sessions: () => {
+            return sessions;
+        }
+    }
+}
+//add resolver to the constructor
+const server = new ApolloServer({typeDefs, resolvers});
 
 server
 .listen({port: process.env.PORT || 4000})
