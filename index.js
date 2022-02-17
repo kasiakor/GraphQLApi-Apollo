@@ -1,5 +1,6 @@
 const {ApolloServer, gql}= require('apollo-server');
 
+//SCHEMA
 //define object that will hold the schema for API
 //define what queries are allowe by the API
 //gql function - JavaScript template literal tag that parses GraphQL queries into an abstract syntax tree (AST). It is the recommended method for passing queries to Apollo Client
