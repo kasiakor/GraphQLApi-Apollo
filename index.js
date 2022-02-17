@@ -20,7 +20,7 @@ type Session {
     room: String,
     day: String,
     format:String,
-    track:String,
+    track:String @deprecated(reason: "too many sessions do not fit in a single track"),
     level:String
 }`
 
